@@ -1,0 +1,41 @@
+{
+  "name": "@open-data-capture/esbuild-plugin-prisma",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.15.3",
+  "author": {
+    "name": "Douglas Neuroinformatics",
+    "email": "support@douglasneuroinformatics.ca"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/DouglasNeuroInformatics/esbuild-plugin-prisma/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DouglasNeuroInformatics/esbuild-plugin-prisma/.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DouglasNeuroInformatics/esbuild-plugin-prisma/issues"
+  },
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "scripts": {
+    "format": "prettier --write src",
+    "lint": "tsc -b jsconfig.json && eslint --fix src"
+  },
+  "peerDependencies": {
+    "@prisma/client": "5.x",
+    "@prisma/engines": "5.x",
+    "esbuild": "0.x",
+    "prisma": "5.x"
+  },
+  "dependencies": {
+    "@prisma/get-platform": "^5.10.2"
+  },
+  "devDependencies": {
+    "@douglasneuroinformatics/eslint-config": "^4.0.1",
+    "@types/node": "^20.11.25",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "~5.3.3"
+  }
+}
