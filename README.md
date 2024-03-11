@@ -5,7 +5,7 @@
   </a>
   <h3 align="center">@douglasneuroinformatics/esbuild-plugin-prisma</h3>
   <p align="center">
-    An esbuild plugin bundle prisma binaries
+    An esbuild plugin to bundle prisma binaries
   </p>
 </div>
 
