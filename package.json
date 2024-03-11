@@ -19,6 +19,7 @@
   },
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
+  "files": ["src"],
   "scripts": {
     "format": "prettier --write src",
     "lint": "tsc -b jsconfig.json && eslint --fix src"
