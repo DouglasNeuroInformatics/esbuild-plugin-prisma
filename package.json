@@ -1,7 +1,7 @@
 {
   "name": "@douglasneuroinformatics/esbuild-plugin-prisma",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "pnpm@8.15.3",
   "description": "An esbuild plugin to bundle prisma binaries",
   "author": {
