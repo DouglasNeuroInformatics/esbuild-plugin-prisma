@@ -12,8 +12,13 @@ export function prismaPlugin(options) {
     name: 'prisma',
     setup(build) {
       build.onEnd(async () => {
-        const { getEnginesPath } = (await import('@prisma/engines')).default;
-        const { getBinaryTargetForCurrentPlatform } = (await import('@prisma/get-platform')).default;
+        // Hopefully in 10 years we will be through this hell :)
+        const getEnginesPath = await import('@prisma/engines').then(
+          (module) => module.getEnginesPath ?? module.default.getEnginesPath
+        );
+        const getBinaryTargetForCurrentPlatform = await import('@prisma/get-platform').then(
+          (module) => module.getBinaryTargetForCurrentPlatform ?? module.default.getBinaryTargetForCurrentPlatform
+        );
 
         const binaryTarget = await getBinaryTargetForCurrentPlatform();
         const enginesDir = getEnginesPath();
