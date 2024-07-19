@@ -2,27 +2,26 @@
   "name": "@douglasneuroinformatics/esbuild-plugin-prisma",
   "type": "module",
   "version": "0.0.2",
-  "packageManager": "pnpm@8.15.3",
+  "packageManager": "pnpm@9.3.0",
   "description": "An esbuild plugin to bundle prisma binaries",
-  "author": {
-    "name": "Douglas Neuroinformatics",
-    "email": "support@douglasneuroinformatics.ca"
-  },
+  "author": "Joshua Unrau",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/DouglasNeuroInformatics/esbuild-plugin-prisma/#readme",
+  "homepage": "https://github.com/DouglasNeuroInformatics/esbuild-plugin-prisma#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DouglasNeuroInformatics/esbuild-plugin-prisma/.git"
+    "url": "https://github.com/DouglasNeuroInformatics/esbuild-plugin-prisma.git"
   },
   "bugs": {
     "url": "https://github.com/DouglasNeuroInformatics/esbuild-plugin-prisma/issues"
   },
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "scripts": {
     "format": "prettier --write src",
-    "lint": "tsc -b jsconfig.json && eslint --fix src"
+    "lint": "tsc && eslint --fix src"
   },
   "peerDependencies": {
     "@prisma/client": "5.x",
@@ -35,9 +34,10 @@
   },
   "devDependencies": {
     "@douglasneuroinformatics/eslint-config": "^4.0.1",
+    "@douglasneuroinformatics/tsconfig": "^1.0.0",
     "@types/node": "^20.11.25",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
-    "typescript": "~5.3.3"
+    "typescript": "~5.5.3"
   }
 }
