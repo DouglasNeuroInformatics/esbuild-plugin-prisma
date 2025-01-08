@@ -25,10 +25,10 @@
     "prepare": "husky"
   },
   "peerDependencies": {
-    "@prisma/client": "5.x",
-    "@prisma/engines": "5.x",
+    "@prisma/client": "5.x || 6.x",
+    "@prisma/engines": "5.x || 6.x",
     "esbuild": "0.x",
-    "prisma": "5.x"
+    "prisma": "5.x || 6.x"
   },
   "dependencies": {
     "@prisma/get-platform": "^5.10.2"
